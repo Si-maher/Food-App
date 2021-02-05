@@ -28,19 +28,20 @@ section {
 
 /*--------Headings-----------*/
 
+h1,h2,h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
 h1 {
     margin: 0;
+    letter-spacing: 0.5px;
     margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
     word-spacing: 6px;
 }
-h1,h2 {
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-weight: 300;
-}
 h2 {
+    letter-spacing: 0.5px;
     text-align: center;
     margin-bottom: 30px;
     font-size: 180%;
@@ -55,12 +56,30 @@ h2::after {
     margin: 0 auto;
     margin-top: 30px;
 }
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
 /*---------Paragraph----------s*/
 
 .long-copy {
     width: 70%;
     margin-left: 15%;
     line-height:145% ;
+}
+.box {
+    padding:1% ;
+}
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+/*---------Icons----------s*/
+.icon-big {
+    font-size: 350%;
+    color: #e67e22;
+    margin-bottom: 10px;
+    display: block;
 }
 /*---------Buttons----------s*/
 
