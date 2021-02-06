@@ -162,7 +162,12 @@ header {
     border-bottom: 2px solid #e67e22;
 
 }
-
+/*-------------------------*/
+/*Features*/
+/*-------------------------*/
+.section-features .long-copy {
+    margin-bottom: 20px;
+}
 
 /*-------------------------*/
 /*Meals*/
@@ -183,13 +188,16 @@ header {
     width: 100%;
     margin: 0;
     overflow: hidden; /*The img becomes bigger than the container, but is now hidden*/
+    background-color: #000000;
 }
 .meal-photo img {
+    opacity: 0.5;
     width:100%;
     height: auto;
     transform: scale(1.15);
-    transition: 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
 }
 .meal-photo img:hover {
+    opacity: 1;
     transform: scale(1.03);
 }
