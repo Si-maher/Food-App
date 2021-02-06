@@ -167,21 +167,29 @@ header {
 /*-------------------------*/
 /*Meals*/
 /*-------------------------*/
-
+.section-meals {
+    padding: 0;
+}
 .meals-showcase {
-    list-style: none;
+   list-style: none;
     width: 100%;
 }
 .meals-showcase li {
-    display: block;
+   display: block;
     width: 25%;
     float: left;
 }
 .meal-photo {
     width: 100%;
     margin: 0;
+    overflow: hidden; /*The img becomes bigger than the container, but is now hidden*/
 }
 .meal-photo img {
     width:100%;
     height: auto;
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+.meal-photo img:hover {
+    transform: scale(1.03);
 }
