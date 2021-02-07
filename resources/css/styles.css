@@ -218,3 +218,19 @@ header {
 .app-screen {
     width: 40%;
 }
+.work-steps {
+  margin-bottom: 20px;  
+}
+.work-steps div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding:5px;
+    float: left;
+    margin-right: 30px;
+    font-size: 150%;
+}
