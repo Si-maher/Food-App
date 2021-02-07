@@ -15,6 +15,14 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 /*-------------------------*/
 /*Reuseable components*/
 /*-------------------------*/
@@ -204,7 +212,9 @@ header {
 /*-------------------------*/
 /*How it works*/
 /*-------------------------*/
-
+.section-steps {
+    background-color: #f4f4f4;
+}
 .steps-box {
     margin-top: 30px;
 }
@@ -216,10 +226,13 @@ header {
     padding-left: 3%;
 }
 .app-screen {
-    width: 40%;
+    width: 45%;
 }
 .work-steps {
   margin-bottom: 20px;  
+}
+.work-steps:last-of-type{
+    margin-bottom:35px ;
 }
 .work-steps div {
     color: #e67e22;
@@ -233,4 +246,9 @@ header {
     float: left;
     margin-right: 30px;
     font-size: 150%;
+}
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
