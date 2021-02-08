@@ -3,251 +3,281 @@
 /*-------------------------*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    background-color: #fff;
-    color: #555;
-    font-family: 'Lato','Arial', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
 }
-.clearfix {zoom: 1;}
+.clearfix {
+  zoom: 1;
+}
 .clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 /*-------------------------*/
 /*Reuseable components*/
 /*-------------------------*/
 .row {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 section {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 /*--------Headings-----------*/
 
-h1,h2,h3 {
-    text-transform: uppercase;
-    font-weight: 300;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 300;
 }
 h1 {
-    margin: 0;
-    letter-spacing: 0.5px;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 240%;
-    word-spacing: 6px;
+  margin: 0;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 6px;
 }
 h2 {
-    letter-spacing: 0.5px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 180%;
-    word-spacing: 2px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 180%;
+  word-spacing: 2px;
 }
 h2::after {
-    display: block;
-    height: 1px;
-    background-color: #e67e22;
-    content: "";/*important*/
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
+  display: block;
+  height: 1px;
+  background-color: #e67e22;
+  content: ""; /*important*/
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 h3 {
-    font-size: 110%;
-    margin-bottom: 15px;
+  font-size: 110%;
+  margin-bottom: 15px;
 }
 /*---------Paragraph----------s*/
 
 .long-copy {
-    width: 70%;
-    margin-left: 15%;
-    line-height:145% ;
+  width: 70%;
+  margin-left: 15%;
+  line-height: 145%;
 }
 .box {
-    padding:1% ;
+  padding: 1%;
 }
 .box p {
-    font-size: 90%;
-    line-height: 145%;
+  font-size: 90%;
+  line-height: 145%;
 }
 /*---------Icons----------s*/
 .icon-big {
-    font-size: 350%;
+  font-size: 350%;
+  color: #e67e22;
+  margin-bottom: 10px;
+  display: block;
+}
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
     color: #e67e22;
-    margin-bottom: 10px;
-    display: block;
+    font-size: 120%;
+    margin-right: 10px;
+    /* To align icon and text*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+/*---------Links----------s*/
+a:link,
+a:active {
+    color: #e67e22;
 }
 /*---------Buttons----------s*/
 
 .btn:link,/*normal state*/
 .btn:visited/*after event*/ {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: background-color 0.3s, color 0.3s, border 0.3s;
-    
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 .btn-full:link,
 .btn-full:visited {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
-    color: #fff;
-    margin-right: 15px;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
 }
 .btn:hover,
 .btn:active {
-    background-color: #cf6d17;
+  background-color: #cf6d17;
 }
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #e67e22;
 }
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
+  border: 1px solid #cf6d17;
+  color: #fff;
 }
 /*-------------------------*/
 /*Header Section*/
 /*-------------------------*/
 header {
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 .hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .logo {
-    height: 100px;
-    width: auto;
-    margin-top: 20px;
-    float: left;
-    
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+  float: left;
 }
 .main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 55px;
+  float: right;
+  list-style: none;
+  margin-top: 55px;
 }
 .main-nav li {
-    display: inline-block;
-    margin-left: 40px;
+  display: inline-block;
+  margin-left: 40px;
 }
-.main-nav li a:link, 
+.main-nav li a:link,
 .main-nav li a:visited {
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 96%;
-    border-bottom: 2px solid transparent;/*Will not work without transparent*/
-    transition: border-bottom 0.3s;
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 96%;
+  border-bottom: 2px solid transparent; /*Will not work without transparent*/
+  transition: border-bottom 0.3s;
 }
-.main-nav  li a:hover, 
+.main-nav li a:hover,
 .main-nav li a:active {
-    color: #e67e22;
-    border-bottom: 2px solid #e67e22;
-
+  color: #e67e22;
+  border-bottom: 2px solid #e67e22;
 }
 /*-------------------------*/
 /*Features*/
 /*-------------------------*/
 .section-features .long-copy {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /*-------------------------*/
 /*Meals*/
 /*-------------------------*/
 .section-meals {
-    padding: 0;
+  padding: 0;
 }
 .meals-showcase {
-   list-style: none;
-    width: 100%;
+  list-style: none;
+  width: 100%;
 }
 .meals-showcase li {
-   display: block;
-    width: 25%;
-    float: left;
+  display: block;
+  width: 25%;
+  float: left;
 }
 .meal-photo {
-    width: 100%;
-    margin: 0;
-    overflow: hidden; /*The img becomes bigger than the container, but is now hidden*/
-    background-color: #000000;
+  width: 100%;
+  margin: 0;
+  overflow: hidden; /*The img becomes bigger than the container, but is now hidden*/
+  background-color: #000000;
 }
 .meal-photo img {
-    opacity: 0.5;
-    width:100%;
-    height: auto;
-    transform: scale(1.15);
-    transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
 }
 .meal-photo img:hover {
-    opacity: 1;
-    transform: scale(1.03);
+  opacity: 1;
+  transform: scale(1.03);
 }
 /*-------------------------*/
 /*How it works*/
 /*-------------------------*/
 .section-steps {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 .steps-box:first-child {
-    text-align: right;
-    padding-right: 3%;
-    margin-top: 30px;
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
 }
 .steps-box:last-child {
-    padding-left: 3%;
-    margin-top: 70px;
+  padding-left: 3%;
+  margin-top: 70px;
 }
 .app-screen {
-    width: 40%;
+  width: 40%;
 }
 .work-steps {
-  margin-bottom: 50px;  
+  margin-bottom: 50px;
 }
-.work-steps:last-of-type{
-    margin-bottom:80px ;
+.work-steps:last-of-type {
+  margin-bottom: 80px;
 }
 .work-steps div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
-    display: inline-block;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    text-align: center;
-    padding:5px;
-    float: left;
-    margin-right: 30px;
-    font-size: 150%;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  margin-right: 30px;
+  font-size: 150%;
 }
 .btn-app img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+/*-------------------------*/
+/*City Images*/
+/*-------------------------*/
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature {
+  margin-bottom: 5px;
 }
