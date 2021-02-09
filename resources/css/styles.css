@@ -156,10 +156,11 @@ a:active {
 /*-------------------------*/
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/hero.jpg);
+    url(../css/img/hero.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 .hero-text-box {
   position: absolute;
@@ -293,4 +294,13 @@ border: 0;
 }
 .city-feature {
   margin-bottom: 5px;
+}
+/*-------------------------*/
+/*Testimonials*/
+/*-------------------------*/
+.section-testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../css/img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
 }
