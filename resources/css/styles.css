@@ -107,8 +107,17 @@ h3 {
 }
 /*---------Links----------s*/
 a:link,
+a:visited {
+    color:#e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 15px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
 a:active {
-    color: #e67e22;
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 /*---------Buttons----------s*/
 
@@ -269,6 +278,10 @@ header {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+.btn-app:link,
+.btn-app:visited {
+border: 0;
 }
 /*-------------------------*/
 /*City Images*/
