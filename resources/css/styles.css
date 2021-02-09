@@ -304,3 +304,29 @@ border: 0;
   color: #fff;
   background-attachment: fixed;
 }
+blockquote:before {
+content:"\201c";/*To add quatation marks*/
+font-size: 500%;
+display: block;
+position: absolute;
+top: -5%;
+left: -5px;
+}
+blockquote {
+  font-style: italic;
+  line-height: 145%;
+  padding: 2%;
+  position: relative;
+  margin-top: 40px;
+}
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align:middle ;
+}
