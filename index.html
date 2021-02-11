@@ -14,16 +14,20 @@
 <body>
     <!---------------------Start of header--------------------->
     <header>
-        <nav class="row">
-            <img class="logo" src="./resources/img/logo-white.png" alt="logo">
-            <ul class="main-nav">
-                <li><a href="#">food delivery</a></li>
-                <li><a href="#">how it works</a></li>
-                <li><a href="#">our cities</a></li>
-                <li><a href="#">sign in</a></li>
-            </ul>
-            
+        <nav class="sticky">
+
+            <div class="row">
+                <img class="logo" src="./resources/img/logo-white.png" alt="logo">
+                <img class="logo-black" src="./resources/img/logo.png" alt="black-logo">
+                <ul class="main-nav">
+                    <li><a href="#">food delivery</a></li>
+                    <li><a href="#">how it works</a></li>
+                    <li><a href="#">our cities</a></li>
+                    <li><a href="#">sign in</a></li>
+                </ul>
+            </div>
         </nav>
+                
         <div class="hero-text-box">
             <h1>Goodbye junk food! <br>Hello super healthy meals</h1>
             <a class="btn btn-full" href="#">I'm hungry</a>
@@ -34,7 +38,7 @@
     <!---------------------End of header--------------------->
 
     <!---------------------Start of Section features--------------------->
-    <section class="section-features">
+    <section class="section-features js-section-features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
             <p class="long-copy">Hello! We are Omnifood, your new premium food delivery service. We know you are always buy. No time for cooking? Let us take care of that, we are really good at it, we promise!</p>
@@ -436,6 +440,9 @@
      </div>
  </footer>
  <!-------------------End of Footersection----------------->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="./vendors/js/jquery.waypoints.min.js"></script>
+ <script src="./resources/js/index.js"></script>
 </body>
 </html>
 
